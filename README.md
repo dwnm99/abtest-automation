@@ -1,4 +1,4 @@
-# Automating A/B Experiment Analysis for Dynamic Pages
+### Project 1: Automating A/B Experiment Analysis for Dynamic Pages
 
 **📖 Context:** During my tenure as a Data Analyst at Tokopedia, the Discovery Page team frequently launched new campaigns and temporary pages, each requiring A/B testing to evaluate performance. Manually calculating experiment results and significance for 2-3 experiments per week placed a significant burden on the data team, leading to delays and limited capacity for deeper analytical work.
 
@@ -6,6 +6,7 @@
 
 - **Manual & Time-Consuming:** Analyzing A/B test results for each new page or campaign was a manual process involving data extraction, metric calculation (CTR, CVR, etc.), and statistical significance testing.
 - **Scalability Issue:** With a growing number of experiments (2-3 per week), the manual process became unsustainable, creating a bottleneck for the Discovery Page team's rapid iteration cycles.
+- **Dashboard Limitation:** The initial build of the A/B test experiment analysis result dashboard requires static data to identify specific page or component names to register as metric dimensions. This is problematic for the Discovery Page team because we are constantly creating new pages for experiments.
 - **Data Capture Challenges:** Ensuring consistent and accurate data capture for newly created, dynamic experiment pages was a critical hurdle.
 
 **🧑‍💻 My Role & Contribution:**
@@ -23,7 +24,7 @@
 - **Metric Calculation Engine:** Implemented logic to calculate key e-commerce metrics like:
     - **Click-Through Rate (CTR):** (Clicks/Views)
     - **Conversion Rate (CVR):** (Conversions/Views)
-    - *Potentially other metrics like time on page, bounce rate, etc., depending on the scope.*
+    - *Potentially other metrics like average order value (AOV), paid order per user, etc., depending on the scope.*
 - **Statistical Significance Module:** Incorporated statistical tests (e.g., delta method) Estimating variance of complex (often ratio) metrics, which then allows for a Z-test to be performed on the difference in ratios.. The platform would output p-values and confidence intervals.
 - **Dynamic Page Data Attribution:** A key aspect was designing a system to correctly attribute user actions to the specific dynamic pages and experiment groups, regardless of how new pages were generated. This likely involved consistent tagging or URL parameters.
 - **Platform Integration:** The analytical backend was integrated with a user-facing dashboard or reporting tool for automated display of results.
