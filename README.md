@@ -1,4 +1,4 @@
-### Project 1: Automating A/B Experiment Analysis for Dynamic Pages
+### Automating A/B Experiment Analysis for Dynamic Pages
 
 **📖 Context:** During my tenure as a Data Analyst at Tokopedia, the Discovery Page team frequently launched new campaigns and temporary pages, each requiring A/B testing to evaluate performance. Manually calculating experiment results and significance for 2-3 experiments per week placed a significant burden on the data team, leading to delays and limited capacity for deeper analytical work.
 
